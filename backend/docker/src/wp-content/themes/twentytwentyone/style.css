@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.fullscreen {
+    display: flex;
+    min-height: 100vh;
+}
+.fullscreen__body {
+    flex: 1 1 auto;
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 20px;
+    width: 100%;
+}
+.fullscreen_bg {
+    background: url("../img/parallax.jpg") center/cover no-repeat fixed;
+}
+.fullscreen_color_blue {
+    background-color: aquamarine;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+.swiper-container .swiper-slide .swiper-slide__text {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 40px;
+    text-align: center;
+}
+.swiper-container .swiper-slide .swiper-slide__background-image {
+    width: 100%;
+    height: 100%;
+}
+.swiper-container .swiper-slide .swiper-slide__background-image {
+    background: url("") center/cover no-repeat;
+}
+.swiper-container .swiper-slide .swiper-slide__background-image_image_1 {
+    background-image: url("../img/01.jpg");
+}
+.swiper-container .swiper-slide .swiper-slide__background-image_image_2 {
+    background-image: url("../img/02.jpg");
+}
+
+.promocode-form * {
+    outline: none;
+}
+
+.promocode-form {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 50px 10px;
+}
+.promocode-form .promocode-form__server-message {
+    height: 80px;
+    font-size: 30px;
+    font-weight: 600;
+    display: none;
+}
+.promocode-form .promocode-form__server-message_active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #77db77;
+}
+.promocode-form .promocode-form__server-message_active_error {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #b17878;
+    font-size: 20px;
+}
+.promocode-form .promocode-form__header {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+.promocode-form .promocode-form__item {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.promocode-form .promocode-form__item input {
+    border-radius: 5px;
+    font-size: 28px;
+    border: 2px solid #c4c4cb;
+    overflow: hidden;
+    padding: 0 20px;
+    transition: all 0.5s ease 0s;
+}
+.promocode-form .promocode-form__item input:focus {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+.promocode-form .promocode-form__item .promocode-form__error-message {
+    color: red;
+    display: none;
+}
+.promocode-form .promocode-form__item .promocode-form__validation-icons {
+    display: flex;
+    position: absolute;
+    right: 10px;
+    top: 35px;
+}
+.promocode-form .promocode-form__item .promocode-form__icon {
+    display: none;
+    font-size: 24px;
+}
+.promocode-form .promocode-form__item .promocode-form__button {
+    font-size: 30px;
+    background-color: #aa419e;
+    color: white;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    transition: all 0.5s ease 0s;
+}
+.promocode-form .promocode-form__item .promocode-form__button:hover {
+    background-color: #c968c3;
+    transform: translate(0px, 5px);
+}
+.promocode-form .promocode-form__item input {
+    flex: 0 1 50px;
+}
+.promocode-form .promocode-form__item_valid input {
+    border: 3px solid #3b8e3b;
+}
+.promocode-form .promocode-form__item_valid .promocode-form__valid-icon {
+    display: block;
+    color: green;
+}
+.promocode-form .promocode-form__item_wrong input {
+    border: 3px solid #ce6262;
+}
+.promocode-form .promocode-form__item_wrong .promocode-form__wrong-icon {
+    display: block;
+    color: red;
+}
+.promocode-form .promocode-form__item_wrong .promocode-form__error-message {
+    display: block;
+}
+
+/*# sourceMappingURL=style.css.map */
